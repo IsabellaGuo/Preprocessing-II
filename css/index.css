@@ -197,12 +197,12 @@ nav {
     display: flex;
     justify-content: space-around;
   }
-  nav a {
-    font-size: 1.5rem;
-    text-decoration: none;
-    color: #212529;
-    padding: 2%;
-  }
+}
+nav a {
+  font-size: 1.5rem;
+  text-decoration: none;
+  color: #212529;
+  padding: 2%;
 }
 .intro h2 {
   margin: 2% 0;
@@ -261,9 +261,20 @@ nav {
     flex-direction: column-reverse;
   }
 }
-.home .inverse-content .text-content {
+.home .inverse-content .text-content h2 {
+  background-color: #7FFFD4;
+  position: relative;
+  animation: mymove 5s infinite;
   padding-left: 1%;
   padding-right: 0;
+}
+@keyframes mymove {
+  from {
+    left: 0%;
+  }
+  to {
+    left: 50%;
+  }
 }
 .home .inverse-content .img-content {
   padding-right: 1%;
@@ -319,10 +330,5 @@ nav {
 @media (max-width: 500px) {
   .home .content-pick .destination .btn {
     padding: 3% 0;
-  }
-}
-@media (max-width: 500px) {
-  body {
-    margin: 5%;
   }
 }
