@@ -1,1 +1,18 @@
 // Mixins in here
+
+.button(@align, @radius){
+    color: @white;
+    background-color: @eastern-blue;
+    text-align: @align;
+    padding: 5% 0;
+    font-size: 1.5rem;
+    border-radius: @radius;
+    margin: 0 5% 0 0;
+  }
+
+  .go(@position){
+    background-color: #7FFFD4;
+    position: @position;
+    animation: mymove 5s infinite;
+
+  }
